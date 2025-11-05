@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(EndPortalBlock.class)
 public class NoEndMixin {
     @Inject(method = "onEntityCollision", at = @At("HEAD"), cancellable = true)
-    private void injectOnEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, CallbackInfo ci) {
+    private void injectOnEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean bl, CallbackInfo ci) {
         MinecraftServer s = world.getServer();
         if (s != null
             && s.getGameRules().getBoolean(DisableEndServer.DISABLE_END)
