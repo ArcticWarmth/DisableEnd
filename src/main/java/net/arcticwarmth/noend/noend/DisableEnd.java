@@ -37,5 +37,4 @@ public class DisableEnd implements ModInitializer {
     @Override
     public void onInitialize() {
     }
-
 }
