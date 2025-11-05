@@ -20,7 +20,7 @@ public class RespawnPosFinder {
                 return respawnLocation;
             }
         }
-        int[] pos = new int[]{world.getSpawnPos().getX(), world.getSpawnPos().getY(), world.getSpawnPos().getZ()};
+        int[] pos = new int[]{world.getSpawnPoint().getPos().getX(), world.getSpawnPoint().getPos().getY(), world.getSpawnPoint().getPos().getZ()};
         RespawnLocation respawnLocation = new RespawnLocation(pos, (net.minecraft.server.world.ServerWorld) world);
         return respawnLocation;
     }

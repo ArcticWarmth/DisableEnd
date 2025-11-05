@@ -26,7 +26,7 @@ public class NoEndMixin {
             && entity.canUsePortals(true)
             && !entity.hasVehicle()
             && !entity.hasPassengers()
-            && entity.getWorld().getRegistryKey() != World.END) {
+            && entity.getEntityWorld().getRegistryKey() != World.END) {
             ci.cancel();
         }
     }
