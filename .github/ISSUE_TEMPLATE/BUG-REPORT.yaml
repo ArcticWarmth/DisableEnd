@@ -30,7 +30,7 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output into https://mclo.gs/
+      description: Please copy and paste any relevant log output into https://mclo.gs/ or alternitive
   - type: input
     id: loader-ver
     attributes:
@@ -43,13 +43,10 @@ body:
       label: Mod version
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: mc-ver
     attributes:
-      label: Version
-      description: What version of our minecraft are you running?
-      options:
-        - 1.19.2
+      label: Minecraft version
     validations:
       required: true
   - type: textarea
@@ -57,10 +54,21 @@ body:
     attributes:
       label: Anything else?
   - type: checkboxes
+    id: version
+    attributes:
+      label: issue-checks
+      description: To ensure the sanity of contributors please select the boxes that apply below
+      options:
+        - label: I have searched for similar issues
+          required: true
+        - label: I understand that my issue may be closed if inadequate info is provided
+          required: true
+        - label: I am using the latest version of the mod for my MC version
+  - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/ArcticWarmth/DisableEnd/blob/main/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct and have searched for any related issues
           required: true
