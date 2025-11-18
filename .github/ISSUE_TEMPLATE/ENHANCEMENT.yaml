@@ -16,7 +16,7 @@ body:
   - type: textarea
     id: new-behavior
     attributes:
-      label: What do you want to see instead?
+      label: What do you want to see instead/added?
     validations:
       required: true    
   - type: textarea
