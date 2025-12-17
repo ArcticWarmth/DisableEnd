@@ -71,6 +71,7 @@ Unless shown otherwise, only the two latest minecraft versions will be supported
     <td>❌</td>
     <td>❌</td>
     <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
     <th>1.21.11</th>
