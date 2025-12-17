@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2023 ArcticWarmth
+Copyright (c) 2025 ArcticWarmth
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,6 @@ import net.fabricmc.api.ModInitializer;
 
 public class DisableEnd implements ModInitializer {
 
-    public static final net.arcticwarmth.noend.noend.ConfigMgr CONFIG = net.arcticwarmth.noend.noend.ConfigMgr.createAndLoad();
 
     /**
      * Runs the mod initializer.

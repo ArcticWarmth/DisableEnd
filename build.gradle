@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.12-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom-remap' version '1.14-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -7,7 +7,7 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-    archivesName = project.archives_base_name
+    archivesName = project.archivesBaseName
 }
 
 repositories {
@@ -16,7 +16,6 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
-    maven { url 'https://maven.wispforest.io' }
 }
 
 loom {
@@ -41,10 +40,6 @@ dependencies {
         // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    // config API
-    modImplementation "io.wispforest:owo-lib:${project.owo_version}"
-    include "io.wispforest:owo-sentinel:${project.owo_version}"
-    annotationProcessor "io.wispforest:owo-lib:${project.owo_version}"
     }
 
 processResources {
@@ -80,7 +75,9 @@ java {
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
     // if it is present.
     // If you remove this line, sources will not be generated.
-    withSourcesJar()
+    //withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
@@ -92,7 +89,8 @@ jar {
 // configure the maven publication
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        create("mavenJava", MavenPublication) {
+            artifactId = project.archivesBaseName
             from components.java
         }
     }
