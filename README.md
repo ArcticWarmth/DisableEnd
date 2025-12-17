@@ -1,4 +1,6 @@
 # DisableEnd
+> [!WARNING]
+> This game version is in EOL. Only bugfixes will be commited to this branch
 
 A simple quick-toggleable fabric mod to disable the end. To toggle the end run `/gamerule doDisableEnd true`
 
