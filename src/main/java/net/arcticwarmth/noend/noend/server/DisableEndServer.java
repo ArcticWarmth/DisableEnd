@@ -14,4 +14,5 @@ public class DisableEndServer  implements DedicatedServerModInitializer {
 
     }
     public static final GameRules.Key<GameRules.BooleanRule> DISABLE_END = GameRuleRegistry.register("doDisableEnd", GameRules.Category.PLAYER, GameRuleFactory.createBooleanRule(false));
+    public static final GameRules.Key<GameRules.BooleanRule> DISABLE_NETHER = GameRuleRegistry.register("doDisableNether", GameRules.Category.PLAYER, GameRuleFactory.createBooleanRule(false));
 }

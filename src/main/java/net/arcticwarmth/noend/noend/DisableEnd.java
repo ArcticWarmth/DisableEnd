@@ -29,7 +29,6 @@ import net.fabricmc.api.ModInitializer;
 
 public class DisableEnd implements ModInitializer {
 
-    public static final net.arcticwarmth.noend.noend.ConfigMgr CONFIG = net.arcticwarmth.noend.noend.ConfigMgr.createAndLoad();
 
     /**
      * Runs the mod initializer.
