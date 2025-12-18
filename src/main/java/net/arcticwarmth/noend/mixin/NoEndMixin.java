@@ -23,9 +23,6 @@ public class NoEndMixin {
         if (s != null
             && s.getGameRules().getBoolean(DisableEndServer.DISABLE_END)
             && world instanceof ServerWorld
-            && entity.canUsePortals(true)
-            && !entity.hasVehicle()
-            && !entity.hasPassengers()
             && entity.getWorld().getRegistryKey() != World.END) {
             ci.cancel();
         }
