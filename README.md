@@ -1,6 +1,6 @@
 # DisableEnd
 
-A simple quick-toggleable fabric mod to disable the end. To toggle the end run `/gamerule doDisableEnd true`
+A simple quick-toggleable fabric mod to disable the end. To toggle the end run `/gamerule noend:disable_end true`
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
 [![ModLoader](https://img.shields.io/badge/Modloader%20-Fabric-%23dbd0b4?style=for-the-badge)](https://opensource.org/licenses/)
