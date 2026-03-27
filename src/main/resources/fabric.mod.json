@@ -5,7 +5,8 @@
   "name": "Disable End",
   "description": "Send players to their spawnpoint when attempting to enter the End.",
   "contributors": [
-    "DexrnZacAttack"
+    "DexrnZacAttack",
+    "Tert0"
   ],
   "authors": [
     "ArcticWarmth"
