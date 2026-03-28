@@ -81,4 +81,12 @@ Unless shown otherwise, only the two latest minecraft versions will be supported
     <td>❌</td>
     <td>✅</td>
   </tr>
+  <tr>
+    <th>26.1</th>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
 </table>
