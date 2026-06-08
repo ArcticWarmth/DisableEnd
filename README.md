@@ -7,13 +7,14 @@ A simple quick-toggleable fabric mod to disable the end. To toggle the end run `
 [![API](https://img.shields.io/badge/Requires%20-Fabric%20API-%23dbd0b4?style=for-the-badge)](https://modrinth.com/mod/fabric-api/)
 
 
-> [!NOTE]
-> OwO lib is required from version 0.2-0.6
+
+[^1]: Only required from version 0.2 to 0.6
 
 ## Requirements
 
 * Fabric API
 * Mod is serverside ONLY and will not run clientside
+* *OwOlib** [^1]
 
 ## Contributing
 
@@ -82,7 +83,7 @@ Unless shown otherwise, only the two latest minecraft versions will be supported
     <td>✅</td>
   </tr>
   <tr>
-    <th>26.1</th>
+    <th>26.1.x</th>
     <td>❌</td>
     <td>❌</td>
     <td>❌</td>
